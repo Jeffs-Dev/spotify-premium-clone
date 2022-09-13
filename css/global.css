@@ -3,6 +3,9 @@
   --d1: #ddd;
   --cor-base-0: #000000;
   --cor-base-1: #1D75DE;
+  --cor-base-3: #ffffff;
+  --cor-base-4: #1ED760;
+  
 
 }
 
@@ -30,7 +33,6 @@ body ul, p, h1, h2, h3, h4, a, span{
   font-size: initial;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
-
 
 
 
