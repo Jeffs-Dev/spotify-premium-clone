@@ -17,18 +17,21 @@
   justify-content: center;
   align-items: center;
   padding: 20px 100px;
+  
 }
 
 .header-menu{
   display: flex;
   gap: 30px;
   margin-left: 120px;
+  
 }
 
 .header-menu a{
   font-size: 0.875rem;
   font-weight: 600;
   transition: all 0.3s;
+  color: var(--cor-base-5);
 }
 
 .header-menu a:hover{
@@ -59,6 +62,7 @@
   font-size: 2.25rem;
   font-weight: 700;
   padding-top: 60px;
+  color: var(--cor-base-5);
 }
 
 .introducao p{
@@ -66,6 +70,7 @@
   padding-top: 30px;
   padding-bottom: 50px;
   font-weight: 500;
+  color: var(--cor-base-5);
 }
 
 .introducao-btn{
@@ -77,6 +82,7 @@
   max-width: max-content;
   margin-bottom: 40px;
   transition: all 0.3s;
+  color: var(--cor-base-5);
 }
 
 .introducao-btn:hover{
@@ -91,6 +97,7 @@
   display: inline-block;
   font-weight: 400;
   margin-bottom: 15px;
+  color: var(--cor-base-5);
 }
 
 .detalhe-sublinhado{
@@ -99,6 +106,7 @@
   font-weight: 400;
   margin-bottom: 15px;
   text-decoration: underline;
+  /* color: var(--cor-base-5); */
 }
 
 
@@ -159,14 +167,182 @@
 }
 
 
+/* Planos */
+
+.planos{
+  padding-bottom: 120px;
+}
+
+.planos-bg{
+  background-color: var(--cor-base-5);
+}
+
+.planos > h1{
+  color: var(--cor-base-0);
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.planos > p{
+  color: var(--cor-base-0);
+  font-weight: 400;
+  text-align: center;
+  font-size: 0.875rem;
+}
 
 
+/* Container que separa os cartões utilizando grid layout */
+.planos-cards-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.planos-card{
+padding: 15px;
+background-color: var(--cor-base-3);
+border-radius: 4px;
+display: flex;
+flex-direction: column;
+}
+
+.planos-card .mesGratis{
+    background-color: var(--cor-base-2);
+    color: var(--cor-base-3);
+    font-weight: 700;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-top: 0;
+}
+
+.planos-card .tipoPlano{
+  font-size: 1.275rem;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  line-height: 1;
+  margin-top: 20px;
+}
+
+.planos-card p, span{
+  font-size: 0.875rem;
+  display: inline-block;
+}
+
+.planos-card p{
+  margin-top: 10px;
+}
+
+.planos-card .pagUnico{
+background-color: var(--cor-base-3);
+color: var(--cor-base-1);
+border-radius: 4px;
+border: 1px solid var(--cor-base-1);
+display: inline-block;
+font-weight: 700;
+font-size: 0.75rem;
+padding: 5px 10px;
+margin-top: 10px;
+}
 
 
+.planos-card .listaBeneficios{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.planos-card .listaBeneficios::before{
+  content: "";
+  background-color: var(--cor-base-0);
+  height: 1px;
+  width: 100%;
+  margin-bottom: 10px;
+}
 
 
+.planos-card .listaBeneficios li{
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+}
+
+.planos-card .listaBeneficios li::before{
+content: "✓";
+font-size: 1.5rem;
+margin-right: 5px;
+}
 
 
+.planos-card .planosBtn{
+ display: block;
+ font-size: 0.875rem;
+ margin: 0 auto;
+ border: 1px solid var(--cor-base-0);
+ padding: 10px 80px;
+ border-radius: 50px;
+ font-weight: 600;
+ text-transform: uppercase;
+ color: var(--cor-base-3);
+ background-color: var(--cor-base-0);
+ max-width: max-content;
+ max-height: 50px;
+
+}
+
+
+.footer-card-termos {
+  font-size: 0.675rem;
+  display: inline-block;
+  margin-top: 5px;
+  padding: 15px 15px;
+}
+
+.universitarios a, h3{
+  text-align: center;
+  display: inline-block;
+}
+
+.universitarios-bg{
+  background-color: var(--cor-base-5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.universitarios{
+  margin-top: 50px;
+  background-color: var(--cor-base-3);
+  padding: 20px 40px;
+  border-radius: 10px;
+
+}
+
+.universitarios h3{
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-right: 120px;
+}
+
+.universitarios a{
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 2px solid var(--cor-base-0);
+  transition: all .2s;
+}
+
+.universitarios a:hover{
+  scale: 1.05;
+}
 
 
 
