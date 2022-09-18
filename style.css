@@ -32,6 +32,7 @@
   font-weight: 600;
   transition: all 0.3s;
   color: var(--cor-base-5);
+
 }
 
 .header-menu a:hover{
@@ -48,6 +49,18 @@
 .header-bg{
   background-color: var(--cor-base-0);
 }
+
+.detalhe-header-menu{
+  color: var(--cor-base-3);
+}
+
+.detalhe-header-menu::before{
+  content: "|";
+  height: 5px;
+  width: 2px;
+  margin-right: 25px;
+}
+
 
 
 /* Introdução */
@@ -73,6 +86,17 @@
   color: var(--cor-base-5);
 }
 
+.botoes-intro{
+  display: flex;
+  gap: 15px;
+}
+
+#introducao-btn2{
+  background-color: var(--cor-base-0);
+  border: 2px solid var(--cor-base-0);
+  display: block;
+}
+
 .introducao-btn{
   border: 2px solid var(--cor-base-3);
   font-weight: 500;
@@ -83,6 +107,7 @@
   margin-bottom: 40px;
   transition: all 0.3s;
   color: var(--cor-base-5);
+  
 }
 
 .introducao-btn:hover{
@@ -211,6 +236,10 @@ flex-direction: column;
 box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.25);
 }
 
+/* .footer-card-container{
+ 
+} */
+
 .planos-card .mesGratis{
     background-color: var(--cor-base-2);
     color: var(--cor-base-3);
@@ -219,6 +248,8 @@ box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.25);
     padding: 4px 10px;
     border-radius: 4px;
     margin-top: 0;
+    width: max-content;
+   
 }
 
 .planos-card .tipoPlano{
@@ -248,6 +279,7 @@ font-weight: 700;
 font-size: 0.75rem;
 padding: 5px 10px;
 margin-top: 10px;
+width: max-content;
 }
 
 
@@ -308,6 +340,8 @@ margin-right: 5px;
   margin-top: 5px;
   padding: 15px 15px;
 }
+
+
 
 .universitarios a, h3{
   text-align: center;
@@ -399,6 +433,7 @@ margin-right: 5px;
   display: inline-block;
   font-size: 0.875rem;
   margin-bottom: 15px;
+  transition: all .3s;
 }
 
 .redes-sociais{
@@ -432,8 +467,30 @@ margin-right: 5px;
 .footer-infos-last li a, .copy p{
   color: var(--cor-base-6);
   font-size: 0.7rem;
+  transition: all 0.3s;
+}
+
+.footer-infos-last a:hover{
+  color: var(--cor-base-4);
+}
+
+.info-footer-links li a:hover{
+  color: var(--cor-base-4);
 }
 
 .copy p{
   text-align: right;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
