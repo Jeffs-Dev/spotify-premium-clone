@@ -39,6 +39,9 @@
   color: var(--cor-base-4);
 }
 
+.naoQuebrar{
+  white-space: nowrap;
+}
 
 .header img{
   display: block;
